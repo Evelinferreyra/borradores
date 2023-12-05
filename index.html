@@ -13,6 +13,23 @@
       
 </head>
 <body>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
     <div class="inicio" id="inicio">
         <div class="inicio-content">
             <h2>Bienvenido</h2>
@@ -20,9 +37,17 @@
             <div class="image-container">
                 <img src="perfil.jpg" alt="">
             </div>
-            <br>
-            <a href="header.html" class="btn-inicio">Ver Currículum</a>
+
+            <div>
+                <p>Ingresa acá para ver más <a href="Acercade.html" class="enlace">acerca de MI</a></p>
+            </div>
         </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('show-menu');
+            }
+        </script>
     </div>
     <footer>
         
