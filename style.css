@@ -35,7 +35,7 @@ body.loaded {
 .btn-line {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #ffffff94;
     margin: 3px 0;
     transition: all 0.3s ease;
 }
@@ -44,7 +44,7 @@ body.loaded {
 .menu {
     width: 200px;
     height: 100%;
-    background-color: #0000009a;
+    background-color: #000000;
     position: fixed;
     top: 0;
     left: -200px;
@@ -72,6 +72,11 @@ body.menu-open .menu {
     display: block;
     padding: 50px;
 }
+
+.menu ul li a:hover {
+    color: blueviolet;
+}
+
 
 
 .menu a.current {
@@ -132,7 +137,7 @@ body.menu-open .menu {
 /* Estilos para los títulos con animación de entrada */
 h2 {
     font-size: 3em;
-    color: rgb(220 175 237);
+    color: blueviolet;
     transform: scale(0);
     transition: transform 1s ease-in-out, color 0.3s ease-in-out;
 }
